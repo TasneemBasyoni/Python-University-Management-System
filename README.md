@@ -1,149 +1,176 @@
-# 🎓Python-University-Management-System
-A University Management System developed in Python using Object-Oriented Programming (OOP) and JSON for data storage.
+# 🎓 University Management System
 
-The system allows administrators to manage students, teachers, courses, and departments, while teachers and students have their own dedicated portals.
+A console-based **University Management System** developed in **Python** using **Object-Oriented Programming (OOP)** principles and **JSON** file storage.
 
-📌 Features
-👨‍💼 Admin
-Student Management
-Add Student
-View All Students
-Search Student
-Edit Student Information
-Delete Student
-Teacher Management
-Add Teacher
-View All Teachers
-Search Teacher
-Edit Teacher Information
-Delete Teacher
-Assign Courses
-Course Management
-Add Course
-View All Courses
-Search Course
-Edit Course
-Delete Course
-Assign Teachers
-Register Students
-Department Management
-Add Department
-View Departments
-Search Department
-Edit Department
-Delete Department
-Assign Head of Department
-👨‍🏫 Teacher Portal
+This project provides a complete system for managing university operations, including students, teachers, courses, and departments through a simple command-line interface.
+
+---
+
+## 📌 Features
+
+### 👨‍💼 Admin
+- Manage Students
+  - Add Student
+  - View All Students
+  - Search Student
+  - Update Student Information
+  - Delete Student
+
+- Manage Teachers
+  - Add Teacher
+  - View All Teachers
+  - Search Teacher
+  - Update Teacher Information
+  - Delete Teacher
+
+- Manage Courses
+  - Add Course
+  - View All Courses
+  - Search Course
+  - Update Course
+  - Delete Course
+
+- Manage Departments
+  - Add Department
+  - View All Departments
+  - Search Department
+  - Update Department
+  - Delete Department
+
+---
+
+### 👨‍🏫 Teacher Portal
+
 Teachers can:
 
-View Assigned Courses
-View Enrolled Students
-Enter Grades
-Edit Grades
-Take Attendance
-👨‍🎓 Student Portal
+- View Assigned Courses
+- View Enrolled Students
+- Enter Student Grades
+- Update Grades
+
+---
+
+### 👨‍🎓 Student Portal
+
 Students can:
 
-View Profile
-View Registered Courses
-Register for Courses
-Drop Courses
-View Grades
-View Attendance
-🗂 Project Structure
+- View Personal Information
+- View Registered Courses
+- View Grades
+
+---
+
+## 🗂 Project Structure
+
+```
 University-Management-System/
 │
-├── data/
-│   ├── students.json
-│   ├── teachers.json
-│   ├── courses.json
-│   ├── departments.json
-│   ├── users.json
-│   └── attendance.json
-│
-├── managers/
-│   ├── student_manager.py
-│   ├── teacher_manager.py
-│   ├── course_manager.py
-│   └── department_manager.py
-│
-├── models/
-│   ├── user.py
-│   ├── student.py
-│   ├── teacher.py
-│   ├── course.py
-│   └── department.py
-│
-├── storage/
-│   └── file_manager.py
-│
-├── utils/
-│   └── id_generator.py
-│
-├── menus.py
-├── login.py
 ├── main.py
-└── README.md
-💾 Data Storage
-The project stores all information using JSON files.
+├── login.py
+├── students.py
+├── teachers.py
+├── courses.py
+├── departments.py
+├── file_manager.py
+├── utils.py
+├── menus.py
+│
+├── students.json
+├── teachers.json
+├── courses.json
+└── departments.json
+```
 
-students.json
-teachers.json
-courses.json
-departments.json
-users.json
-attendance.json
+---
+
+## 💾 Data Storage
+
+The system stores all data using **JSON** files.
+
+- students.json
+- teachers.json
+- courses.json
+- departments.json
+
 No external database is required.
 
-🛠 Technologies Used
-Python 3
-Object-Oriented Programming (OOP)
-JSON File Storage
-🔐 Login System
-The system supports three user roles:
+---
 
-Admin
-Teacher
-Student
-Each user logs in using their email and password.
+## 🛠 Technologies Used
 
-🔄 Relationships
-A student can register for multiple courses.
-A course can have multiple teachers.
-A teacher can teach multiple courses.
-A department contains students, teachers, and courses.
-Deleting a student, teacher, or course automatically updates all related records.
-▶️ How to Run
-Clone the repository:
+- Python 3
+- Object-Oriented Programming (OOP)
+- JSON File Handling
+- Modular Programming
 
-git clone https://github.com/yourusername/University-Management-System.git
-Navigate to the project:
+---
 
-cd University-Management-System
-Run the application:
+## 🔐 Login System
 
+The system supports multiple user roles:
+
+- Admin
+- Teacher
+- Student
+
+Each user can access the features assigned to their role.
+
+---
+
+## ▶️ How to Run
+
+1. Clone the repository
+
+```bash
+git clone https://github.com/your-username/Python-University-Management-System.git
+```
+
+2. Open the project folder
+
+```bash
+cd Python-University-Management-System
+```
+
+3. Run the application
+
+```bash
 python main.py
-📖 Example Workflow
-Login as Admin.
-Create Departments.
-Add Teachers.
-Add Students.
-Create Courses.
-Assign Teachers to Courses.
-Register Students in Courses.
-Login as Teacher to manage grades and attendance.
-Login as Student to view courses, grades, and attendance.
-🚀 Future Improvements
-GPA Calculation
-Semester Management
-Course Prerequisites
-Search Filters
-CSV/PDF Export
-SQLite/MySQL Database Support
-Graphical User Interface (Tkinter or PyQt)
-Web Version using Flask or Django
-👨‍💻 Author
-Developed as a Python Object-Oriented Programming project.
+```
 
-📄 License
-This project is intended for educational purposes.
+---
+
+## 📖 Project Workflow
+
+1. Login to the system.
+2. Add departments.
+3. Add teachers.
+4. Add students.
+5. Create courses.
+6. Assign courses.
+7. Manage student information.
+8. View reports.
+
+---
+
+## 🚀 Future Improvements
+
+- GPA Calculation
+- Attendance System
+- Course Registration
+- Semester Management
+- Search & Filter
+- SQLite/MySQL Database
+- GUI using Tkinter
+- Web Version using Flask or Django
+
+---
+
+## 👨‍💻 Author
+
+Developed as a Python Object-Oriented Programming (OOP) project for educational purposes.
+
+---
+
+## 📄 License
+
+This project is intended for educational purposes only.
