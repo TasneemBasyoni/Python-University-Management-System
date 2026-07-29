@@ -1,45 +1,46 @@
-# 🎓 University Management System
+# 🎓 Python University Management System
 
-A console-based **University Management System** developed in **Python** using **Object-Oriented Programming (OOP)** principles and **JSON** file storage.
+A **console-based University Management System** developed in **Python** using **Object-Oriented Programming (OOP)** principles and **JSON** file storage.
 
-This project provides a complete system for managing university operations, including students, teachers, courses, and departments through a simple command-line interface.
-
----
-
-## 📌 Features
-
-### 👨‍💼 Admin
-- Manage Students
-  - Add Student
-  - View All Students
-  - Search Student
-  - Update Student Information
-  - Delete Student
-
-- Manage Teachers
-  - Add Teacher
-  - View All Teachers
-  - Search Teacher
-  - Update Teacher Information
-  - Delete Teacher
-
-- Manage Courses
-  - Add Course
-  - View All Courses
-  - Search Course
-  - Update Course
-  - Delete Course
-
-- Manage Departments
-  - Add Department
-  - View All Departments
-  - Search Department
-  - Update Department
-  - Delete Department
+The system provides an efficient way to manage university operations, including students, teachers, courses, and departments through a user-friendly command-line interface.
 
 ---
 
-### 👨‍🏫 Teacher Portal
+# 📌 Features
+
+## 👨‍💼 Admin
+
+### Student Management
+- Add Student
+- View All Students
+- Search Student
+- Update Student Information
+- Delete Student
+
+### Teacher Management
+- Add Teacher
+- View All Teachers
+- Search Teacher
+- Update Teacher Information
+- Delete Teacher
+
+### Course Management
+- Add Course
+- View All Courses
+- Search Course
+- Update Course Information
+- Delete Course
+
+### Department Management
+- Add Department
+- View All Departments
+- Search Department
+- Update Department Information
+- Delete Department
+
+---
+
+## 👨‍🏫 Teacher Portal
 
 Teachers can:
 
@@ -50,7 +51,7 @@ Teachers can:
 
 ---
 
-### 👨‍🎓 Student Portal
+## 👨‍🎓 Student Portal
 
 Students can:
 
@@ -60,20 +61,20 @@ Students can:
 
 ---
 
-## 🗂 Project Structure
+# 🗂 Project Structure
 
 ```
-University-Management-System/
+Python-University-Management-System/
 │
 ├── main.py
 ├── login.py
+├── menus.py
 ├── students.py
 ├── teachers.py
 ├── courses.py
 ├── departments.py
 ├── file_manager.py
 ├── utils.py
-├── menus.py
 │
 ├── students.json
 ├── teachers.json
@@ -83,9 +84,9 @@ University-Management-System/
 
 ---
 
-## 💾 Data Storage
+# 💾 Data Storage
 
-The system stores all data using **JSON** files.
+The project stores all information using **JSON** files.
 
 - students.json
 - teachers.json
@@ -96,7 +97,7 @@ No external database is required.
 
 ---
 
-## 🛠 Technologies Used
+# 🛠 Technologies Used
 
 - Python 3
 - Object-Oriented Programming (OOP)
@@ -105,33 +106,33 @@ No external database is required.
 
 ---
 
-## 🔐 Login System
+# 🔐 User Roles
 
-The system supports multiple user roles:
+The system supports three user roles:
 
-- Admin
-- Teacher
-- Student
+- 👨‍💼 Admin
+- 👨‍🏫 Teacher
+- 👨‍🎓 Student
 
-Each user can access the features assigned to their role.
+Each user has access to features based on their role.
 
 ---
 
-## ▶️ How to Run
+# ▶️ How to Run
 
-1. Clone the repository
+### Clone the repository
 
 ```bash
 git clone https://github.com/your-username/Python-University-Management-System.git
 ```
 
-2. Open the project folder
+### Navigate to the project
 
 ```bash
 cd Python-University-Management-System
 ```
 
-3. Run the application
+### Run the application
 
 ```bash
 python main.py
@@ -139,38 +140,38 @@ python main.py
 
 ---
 
-## 📖 Project Workflow
+# 📖 Example Workflow
 
 1. Login to the system.
-2. Add departments.
+2. Create departments.
 3. Add teachers.
 4. Add students.
 5. Create courses.
-6. Assign courses.
-7. Manage student information.
+6. Assign teachers and students.
+7. Manage university records.
 8. View reports.
 
 ---
 
-## 🚀 Future Improvements
+# 🚀 Future Improvements
 
 - GPA Calculation
-- Attendance System
+- Attendance Management
 - Course Registration
 - Semester Management
-- Search & Filter
-- SQLite/MySQL Database
-- GUI using Tkinter
+- Advanced Search & Filtering
+- SQLite/MySQL Database Integration
+- Graphical User Interface (Tkinter or PyQt)
 - Web Version using Flask or Django
 
 ---
 
-## 👨‍💻 Author
+# 👨‍💻 Author
 
 Developed as a Python Object-Oriented Programming (OOP) project for educational purposes.
 
 ---
 
-## 📄 License
+# 📄 License
 
 This project is intended for educational purposes only.
